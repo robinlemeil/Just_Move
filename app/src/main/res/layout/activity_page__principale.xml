@@ -10,7 +10,7 @@
         android:id="@+id/id_bienvenue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenue sur la page principale !"
+        android:text="Bienvenue sur la page principale mon ami !"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
