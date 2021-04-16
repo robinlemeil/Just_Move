@@ -16,27 +16,26 @@
         android:selectAllOnFocus="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165" />
+        app:layout_constraintVertical_bias="0.108" />
 
     <EditText
         android:id="@+id/id_password"
         android:layout_width="262dp"
         android:layout_height="42dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="516dp"
         android:hint="Mot de passe"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_username"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintVertical_bias="0.053" />
 
     <Button
         android:id="@+id/id_connexion"
@@ -51,9 +50,10 @@
         android:text="Connexion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_password"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.226" />
 
     <Button
         android:id="@+id/id_continue"
@@ -68,10 +68,10 @@
         android:text="Continue en tant qu'invité"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_password"
-        app:layout_constraintVertical_bias="0.722" />
+        app:layout_constraintVertical_bias="0.996" />
 
     <ProgressBar
         android:id="@+id/loading"
@@ -96,8 +96,8 @@
         android:text="Nombre d'essais restants : 5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_connexion"
-        app:layout_constraintVertical_bias="0.019" />
+        app:layout_constraintVertical_bias="0.079" />
 </androidx.constraintlayout.widget.ConstraintLayout>
