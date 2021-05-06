@@ -11,7 +11,7 @@
         android:id="@+id/id_username"
         android:layout_width="262dp"
         android:layout_height="41dp"
-        android:hint="Mail"
+        android:hint="Adresse mail"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
         app:layout_constraintBottom_toBottomOf="parent"
