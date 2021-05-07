@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/id_parametre"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Page_Principale">
@@ -27,26 +27,27 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
+        app:layout_constraintVertical_bias="0.234" />
 
     <Button
         android:id="@+id/id_recherche"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/green_logo"
+        android:backgroundTint="@color/clear_green"
         android:text="Rechercher un article"
+        android:textColor="@color/green_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintHorizontal_bias="0.844"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.228" />
+        app:layout_constraintVertical_bias="0.24" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/id_onglet_parametres"
         android:layout_width="67dp"
         android:layout_height="73dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,6 +57,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.025"
         app:srcCompat="@drawable/parametre" />
+
+    <Button
+        android:id="@+id/id_onglet_ressource"
+        android:layout_width="169dp"
+        android:layout_height="47dp"
+        android:text="Accueil"
+        android:backgroundTint="@color/green_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <Button
+        android:id="@+id/id_onglet_routine"
+        android:layout_width="169dp"
+        android:layout_height="47dp"
+        android:text="Routine"
+        android:backgroundTint="@color/green_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
