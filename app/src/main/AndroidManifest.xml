@@ -11,7 +11,7 @@
         android:theme="@style/Theme.Just_Move">
         <activity android:name=".Page_Routine"></activity>
         <activity android:name=".Page_Principale" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Page_connexion">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
