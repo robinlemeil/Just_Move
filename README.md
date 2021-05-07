@@ -14,3 +14,8 @@ Compte-rendu du 16/04/2021 :
 - première activité : page de connexion -> à améliorer mais fonctionnel
 - lien page de connexion - page principale (changement de page réussi)
 - Travail effectué à 3 ce jour pour qu'on puisse s'entraider etavoir tous les mêmes bases.
+
+Vacances d'avril-mai :
+- Julien : page d'inscription si pas de compte
+- Robin : page d'accueil, onglet ressources
+- Gurvan : onglet paramètres
