@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Just_Move</string>
+
+    <string-array name="liste_type">
+        <item>Tout Types</item>
+        <item>Video</item>
+        <item>Article</item>
+        <item>Audio</item>
+    </string-array>
 </resources>
