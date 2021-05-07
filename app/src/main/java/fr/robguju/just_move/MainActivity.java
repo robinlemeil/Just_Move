@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     class Credentials
     {
         String name = "Admin";
-        String password = "1234";
+        String password ="1234";
     }
 
     boolean isValid = false;
