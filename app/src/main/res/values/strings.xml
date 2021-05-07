@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Just_Move</string>
+    <string name="titre_default">Nom de l article</string>
+    <string name="resume_default">Je suis le résumé</string>
 
     <string-array name="liste_type">
         <item>Tout Types</item>
