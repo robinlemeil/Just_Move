@@ -1,12 +1,28 @@
 <resources>
+    <!-- page de connexion -->
     <string name="app_name">Just_Move</string>
-    <string name="titre_default">Nom de l article</string>
-    <string name="resume_default">Je suis le résumé</string>
+    <string name="mail">Mail</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="connexion">Connexion</string>
+    <string name="continue_invite">Continue en tant qu\'invité</string>
 
+    <!-- page principale -->
+    <string name="accueil">Accueil</string>
+    <string name="routine">Routine</string>
+    <string name="recherche_article">Rechercher un article</string>
+    <string name="titre_default">Nom de l article</string>
+    <string name="resume_default">Description</string>
+
+    <!-- spinner -->
     <string-array name="liste_type">
         <item>Tout Types</item>
         <item>Video</item>
         <item>Article</item>
         <item>Audio</item>
     </string-array>
+
+    <!-- page de pop-up -->
+    <string name="popup_titre_default">Nom de l\'article</string>
+    <string name="popup_resume_default">Description</string>
+
 </resources>
