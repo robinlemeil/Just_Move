@@ -7,13 +7,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="5dp"
-    android:layout_marginVertical="10dp">
+    android:layout_marginVertical="10dp"
+    android:id="@+id/item_view">
 
 
     <ImageView
         android:id="@+id/image_item"
         android:layout_width="100dp"
-        android:layout_height="72dp"
+        android:layout_height="100dp"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:src="@drawable/article_eau_img"
@@ -47,10 +48,9 @@
         android:text="@string/resume_default"
         android:textColor="@color/gris_clair"
         android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="@+id/image_item"
+
         app:layout_constraintEnd_toStartOf="@+id/favori_item"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/image_item"
         app:layout_constraintTop_toBottomOf="@+id/titre_item"
         app:layout_constraintVertical_bias="1.0"
         android:layout_marginEnd="10dp" />
@@ -65,6 +65,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/image_item"
         app:layout_constraintStart_toEndOf="@+id/image_item"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
