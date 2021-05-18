@@ -5,6 +5,7 @@
     <string name="mot_de_passe">Mot de passe</string>
     <string name="connexion">Connexion</string>
     <string name="continue_invite">Continue en tant qu\'invité</string>
+    <string name="creer_compte">Créer un compte</string>
 
     <!-- page principale -->
     <string name="accueil">Accueil</string>
@@ -25,5 +26,12 @@
     <string name="popup_titre_default">Nom de l\'article</string>
     <string name="popup_resume_default">Description</string>
     <string name="popup_texte_default">Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. Je suis le texte. </string>
+    <string name="remplir_champs">Veuillez remplir les champs ci-dessous</string>
+    <string name="prenom">Prénom</string>
+    <string name="nom">Nom</string>
+    <string name="age">Age</string>
+    <string name="taille">Taille (cm)</string>
+    <string name="poids">Poids (kg)</string>
+    <string name="temps_bureau"> Durée bureau quotidienne (en h)</string>
 
 </resources>

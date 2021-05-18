@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fr.robguju.just_move">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Just_Move">
-        <activity android:name=".Page_Routine"/>
+        <activity android:name=".Page_Creation_Compte"></activity>
+        <activity android:name=".Page_Routine" />
         <activity android:name=".Page_Principale" />
         <activity android:name=".Page_connexion">
             <intent-filter>
