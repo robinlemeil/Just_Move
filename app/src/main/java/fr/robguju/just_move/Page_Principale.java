@@ -20,11 +20,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 //on implemente une classe abstraite pour le spinner
-public class Page_Principale extends AppCompatActivity implements
-        AdapterView.OnItemSelectedListener{
+public class Page_Principale extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     //declaration attributs
     private Button onglet_accueil;
+    private Button onglet_utilisateur;
     private Button onglet_routine;
     private ListView selec_article;
     private ImageView image_article;
@@ -41,6 +41,7 @@ public class Page_Principale extends AppCompatActivity implements
         //on lie le XML à nos variables
         onglet_accueil = findViewById(R.id.id_onglet_ressource);
         onglet_routine = findViewById(R.id.id_onglet_routine);
+        onglet_utilisateur = findViewById(R.id.id_onglet_parametres);
         selec_article = findViewById(R.id.liste_article);
         image_article = findViewById(R.id.image_item);
         titre_article = findViewById(R.id.titre_item);
@@ -66,6 +67,14 @@ public class Page_Principale extends AppCompatActivity implements
                  }
              }
              );
+
+        onglet_utilisateur.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Page_Principale.this, UserPage.class));
+                }
+            }
+            );
 
         //creation du spinner
         Spinner spinner = (Spinner) findViewById(R.id.id_type);

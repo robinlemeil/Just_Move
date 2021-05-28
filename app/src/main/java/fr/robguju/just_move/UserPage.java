@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class UserPage extends AppCompatActivity {
+public class UserPage extends AppCompatActivity implements View.OnClickListener  {
 
     private Button eSettings;
     private Button eFavoris;
@@ -18,15 +18,19 @@ public class UserPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_page);
+
         eSettings = findViewById(R.id.button_Utilisateur);
         eFavoris = findViewById(R.id.button_Favoris);
         eTutoriels = findViewById(R.id.button_Tutoriels);
         eDeconnexion = findViewById(R.id.button_Deconexion);
+        eSettings.setOnClickListener(this);
+    }
 
-        eSettings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, UserSettings.class));
-            }
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.button_Utilisateur:
+                startActivity(new Intent(UserPage.this, Page_ModifParametre.class));
+        }
     }
 }

@@ -6,23 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".UserPage">
 
+    <ImageView
+        android:id="@+id/id_logo"
+        android:layout_width="197dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginStart="5dp" />
+
     <Button
         android:id="@+id/button_Favoris"
         android:layout_width="325dp"
         android:layout_height="104dp"
-
+        android:backgroundTint="@color/green_logo"
         android:text="Favoris"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.438" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <Button
         android:id="@+id/button_Utilisateur"
         android:layout_width="325dp"
         android:layout_height="104dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/green_logo"
         android:text="Modifier paramètre utilisateur"
         app:layout_constraintBottom_toTopOf="@+id/button_Favoris"
         app:layout_constraintEnd_toEndOf="@+id/button_Favoris"
@@ -35,7 +47,8 @@
         android:id="@+id/button_Tutoriels"
         android:layout_width="325dp"
         android:layout_height="104dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/green_logo"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Tutoriels"
@@ -49,9 +62,7 @@
         android:id="@+id/button_Deconexion"
         android:layout_width="178dp"
         android:layout_height="52dp"
-
-        android:layout_marginTop="280dp"
-
+        android:layout_marginTop="224dp"
         android:text="Deconexion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -59,19 +70,3 @@
         app:layout_constraintTop_toBottomOf="@+id/button_Favoris" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-<Button
-android:id="@+id/id_settings"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_gravity="start"
-android:layout_marginStart="48dp"
-android:layout_marginTop="16dp"
-android:layout_marginEnd="48dp"
-android:layout_marginBottom="64dp"
-android:enabled="true"
-android:text="Connexion"
-app:layout_constraintBottom_toBottomOf="parent"
-app:layout_constraintEnd_toEndOf="parent"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toBottomOf="@+id/id_password"
-app:layout_constraintVertical_bias="0.2" />
