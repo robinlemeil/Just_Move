@@ -12,9 +12,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,7 +68,7 @@ public class Page_Principale extends AppCompatActivity implements AdapterView.On
         onglet_utilisateur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Page_Principale.this, UserPage.class));
+                startActivity(new Intent(Page_Principale.this, Page_Utilisateur.class));
                 }
             }
             );

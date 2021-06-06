@@ -16,7 +16,7 @@
         <activity android:name=".Page_Creation_Compte" />
         <activity android:name=".Page_Routine" />
         <activity android:name=".Page_Principale" />
-        <activity android:name=".UserPage" />
+        <activity android:name=".Page_Utilisateur" />
         <activity android:name=".Page_connexion">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +24,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".Firebase_Notifications">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

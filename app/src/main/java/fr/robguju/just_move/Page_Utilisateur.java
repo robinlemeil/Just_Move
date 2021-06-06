@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class UserPage extends AppCompatActivity implements View.OnClickListener  {
+public class Page_Utilisateur extends AppCompatActivity implements View.OnClickListener  {
 
     private Button eSettings;
     private Button eFavoris;
@@ -30,7 +30,7 @@ public class UserPage extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.button_Utilisateur:
-                startActivity(new Intent(UserPage.this, Page_ModifParametre.class));
+                startActivity(new Intent(Page_Utilisateur.this, Page_ModifParametre.class));
         }
     }
 }
