@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page_ModifParametre">
+
+    <ImageView
+        android:id="@+id/id_logo"
+        android:layout_width="197dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:id="@+id/remplir_champs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remplir_champs"
+        android:textSize="20sp"
+        android:typeface="normal"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_logo" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="262dp"
+        android:layout_height="42dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="50dp"
+        android:selectAllOnFocus="true"
+        android:text="@string/prenom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remplir_champs" />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="262dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="44dp"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        android:text="@string/nom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prenom" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:text="@string/age"
+        app:layout_constraintStart_toStartOf="@+id/nom"
+        app:layout_constraintTop_toBottomOf="@+id/nom" />
+
+    <EditText
+        android:id="@+id/taille"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:text="@string/taille"
+        app:layout_constraintStart_toStartOf="@+id/age"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+
+    <EditText
+        android:id="@+id/poids"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:text="@string/poids"
+
+        app:layout_constraintEnd_toEndOf="@+id/nom"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toEndOf="@+id/taille"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <EditText
+        android:id="@+id/temps_bureau"
+        android:layout_width="262dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="40dp"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:text="@string/temps_bureau"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taille" />
+
+    <Button
+        android:id="@+id/enregistrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/green_logo"
+        android:text="Enregistrer les informations"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="130dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Page de Modification des informations du Profil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

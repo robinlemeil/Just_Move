@@ -35,6 +35,7 @@ public class Page_Creation_Compte extends AppCompatActivity implements View.OnCl
 
         Auth = FirebaseAuth.getInstance();
 
+
         id_logo = (ImageView) findViewById(R.id.id_logo);
         id_prenom = (EditText) findViewById(R.id.prenom);
         id_nom = (EditText) findViewById(R.id.nom);
@@ -77,10 +78,12 @@ public class Page_Creation_Compte extends AppCompatActivity implements View.OnCl
             id_prenom.setError("Prénom manquant");
             id_prenom.requestFocus();
             return;}
+
         if (nom.isEmpty()){
             id_nom.setError("Nom manquant");
             id_nom.requestFocus();
             return;}
+
         if (!Patterns.EMAIL_ADDRESS.matcher(mail).matches()){
             id_mail.setError("Adresse mail incorrecte");
             id_mail.requestFocus();

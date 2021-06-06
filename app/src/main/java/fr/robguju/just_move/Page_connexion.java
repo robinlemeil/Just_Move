@@ -50,8 +50,8 @@ public class Page_connexion extends AppCompatActivity implements View.OnClickLis
     }
 
     @Override
-    public void onClick(View v) {
-        switch (v.getId()){
+    public void onClick(View view) {
+        switch (view.getId()){
             case R.id.id_continue:
                 startActivity(new Intent(Page_connexion.this, Page_Principale.class));
             case R.id.creation_compte:

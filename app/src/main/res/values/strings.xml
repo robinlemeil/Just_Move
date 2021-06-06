@@ -33,5 +33,8 @@
     <string name="taille">Taille (cm)</string>
     <string name="poids">Poids (kg)</string>
     <string name="temps_bureau"> Durée bureau quotidienne (en h)</string>
+    <string name="channel_id">myCanal</string>
+    <string name="channel_title">myTitle</string>
+    <string name="channel_text">Je suis le texte</string>
 
 </resources>
