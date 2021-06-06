@@ -26,3 +26,5 @@ Mois de mai 2021 :
 - modification parametres utilisateur (page_utilisateur.class) avec mise à jour Firebase
 - gestion des notifications (notifs à 10h, 11h, 14h et 15h les jours de la semaine pour faire un exercice)
 - gestion de la deconnexion
+
+Utilisation de Firebase : RealTimeDatabase, Authentification et Cloud Messaging.
