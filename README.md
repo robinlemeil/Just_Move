@@ -15,7 +15,14 @@ Compte-rendu du 16/04/2021 :
 - lien page de connexion - page principale (changement de page réussi)
 - Travail effectué à 3 ce jour pour qu'on puisse s'entraider etavoir tous les mêmes bases.
 
-Vacances d'avril-mai :
+Vacances d'avril-mai 2021:
 - Julien : page d'inscription si pas de compte
 - Robin : page d'accueil, onglet ressources
 - Gurvan : onglet paramètres
+
+Mois de mai 2021 :
+- problème Firebase, perte de temps pour l'onglet ressources
+- création des popups quand clic sur un article
+- modification parametres utilisateur (page_utilisateur.class) avec mise à jour Firebase
+- gestion des notifications (notifs à 10h, 11h, 14h et 15h les jours de la semaine pour faire un exercice)
+- gestion de la deconnexion
