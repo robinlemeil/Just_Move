@@ -36,5 +36,10 @@
     <string name="channel_id">myCanal</string>
     <string name="channel_title">myTitle</string>
     <string name="channel_text">Je suis le texte</string>
+    <string name="continuer">Ou alors, vous pouvez continuer en accès restreint :</string>
+    <string name="favori">Favoris</string>
+    <string name="tutoriels">Tutoriels</string>
+    <string name="deconnexion">Deconnexion</string>
+    <string name="parametres">Modifier paramètre utilisateur</string>
 
 </resources>

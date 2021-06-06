@@ -9,7 +9,6 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -17,13 +16,13 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Page_connexion extends AppCompatActivity implements View.OnClickListener {
+public class Page_Connexion extends AppCompatActivity implements View.OnClickListener {
 
     //declaration attributs
     private EditText id_mail;
     private EditText id_password;
     private Button connexion;
-    public Button continuer;
+    public Button continuer_invite;
     private Button creer_compte;
     private FirebaseAuth Auth;
 
@@ -39,11 +38,11 @@ public class Page_connexion extends AppCompatActivity implements View.OnClickLis
         id_mail = (EditText) findViewById(R.id.id_username);
         id_password = (EditText) findViewById(R.id.id_password);
         connexion = (Button) findViewById(R.id.id_connexion);
-        continuer = (Button) findViewById(R.id.id_continue);
+        continuer_invite = (Button) findViewById(R.id.id_continue);
         creer_compte = (Button) findViewById(R.id.creation_compte);
         Auth = FirebaseAuth.getInstance();
 
-        continuer.setOnClickListener(this);
+        continuer_invite.setOnClickListener(this);
         creer_compte.setOnClickListener(this);
         connexion.setOnClickListener(this);
 
@@ -53,9 +52,9 @@ public class Page_connexion extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.id_continue:
-                startActivity(new Intent(Page_connexion.this, Page_Principale.class));
+                startActivity(new Intent(Page_Connexion.this, Page_Principale.class));
             case R.id.creation_compte:
-                startActivity(new Intent(Page_connexion.this, Page_Creation_Compte.class));
+                startActivity(new Intent(Page_Connexion.this, Page_Creation_Compte.class));
             case R.id.id_connexion:
                 connexion_utilisateur();
         }
@@ -87,10 +86,12 @@ public class Page_connexion extends AppCompatActivity implements View.OnClickLis
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                    startActivity(new Intent(Page_connexion.this, Page_Principale.class));
+                    startActivity(new Intent(Page_Connexion.this, Page_Principale.class));
+                    Button onglet_utilisateur = findViewById(R.id.id_onglet_parametres);
+                    onglet_utilisateur.setVisibility(View.VISIBLE);
                 }
                 else {
-                    Toast.makeText(Page_connexion.this, "Connexion impossible, veuillez vérifier vos identifiants",Toast.LENGTH_LONG).show();
+                    Toast.makeText(Page_Connexion.this, "Connexion impossible, veuillez vérifier vos identifiants",Toast.LENGTH_LONG).show();
                 }
             }
         });

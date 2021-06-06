@@ -3,10 +3,8 @@ package fr.robguju.just_move;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.app.Service;
 import android.content.Intent;
 import android.os.Build;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
@@ -25,7 +23,7 @@ public class Firebase_Notifications extends FirebaseMessagingService {
         String msg = remoteMessage.getNotification().getBody();
 
         //clic sur la notification
-        Intent intent = new Intent(getApplicationContext(),Page_connexion.class);
+        Intent intent = new Intent(getApplicationContext(), Page_Connexion.class);
         PendingIntent pending = PendingIntent.getActivity(this,0,intent,0);
 
         //composition de la notification

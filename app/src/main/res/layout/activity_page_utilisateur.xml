@@ -19,43 +19,36 @@
 
     <Button
         android:id="@+id/button_Favoris"
-        android:layout_width="325dp"
-        android:layout_height="104dp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
         android:backgroundTint="@color/green_logo"
-        android:text="Favoris"
+        android:text="@string/favori"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_Utilisateur"
+        app:layout_constraintStart_toStartOf="@+id/button_Utilisateur"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
 
     <Button
         android:id="@+id/button_Utilisateur"
-        android:layout_width="325dp"
-        android:layout_height="104dp"
-        android:layout_marginBottom="60dp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
         android:backgroundTint="@color/green_logo"
-        android:text="Modifier paramètre utilisateur"
+        android:text="@string/parametres"
         app:layout_constraintBottom_toTopOf="@+id/button_Favoris"
-        app:layout_constraintEnd_toEndOf="@+id/button_Favoris"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button_Favoris"
-
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_logo" />
 
     <Button
         android:id="@+id/button_Tutoriels"
-        android:layout_width="325dp"
-        android:layout_height="104dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
         android:backgroundTint="@color/green_logo"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Tutoriels"
-
-        app:layout_constraintEnd_toEndOf="@+id/button_Favoris"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button_Favoris"
+        android:text="@string/tutoriels"
+        app:layout_constraintBottom_toTopOf="@+id/button_Deconexion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_Favoris" />
 
     <Button
@@ -63,7 +56,9 @@
         android:layout_width="178dp"
         android:layout_height="52dp"
         android:layout_marginTop="224dp"
-        android:text="Deconexion"
+        android:text="@string/deconnexion"
+        android:backgroundTint="@color/clear_green"
+        android:textColor="@color/green_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"

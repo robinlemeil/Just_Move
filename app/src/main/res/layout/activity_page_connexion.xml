@@ -6,7 +6,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Page_connexion">
+    tools:context=".Page_Connexion">
 
     <EditText
         android:id="@+id/id_username"
@@ -51,20 +51,28 @@
         android:id="@+id/id_continue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="64dp"
-        android:text="@string/continue_invite"
         android:backgroundTint="@color/clear_green"
+        android:text="@string/continue_invite"
         android:textColor="@color/green_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_password"
-        app:layout_constraintVertical_bias="0.996" />
+        app:layout_constraintTop_toBottomOf="@+id/id_connexion" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/continuer"
+        android:textColor="@color/gris_clair"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_connexion"
+        android:gravity="center_horizontal" />
 
     <ProgressBar
         android:id="@+id/loading"
@@ -82,17 +90,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3" />
 
-    <TextView
-        android:id="@+id/id_essais"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nombre d'essais restants : 5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_connexion"
-        app:layout_constraintVertical_bias="0.079" />
+
 
     <ImageView
         android:id="@+id/imageView"

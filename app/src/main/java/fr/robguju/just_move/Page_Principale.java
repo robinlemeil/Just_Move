@@ -21,7 +21,7 @@ public class Page_Principale extends AppCompatActivity implements AdapterView.On
 
     //declaration attributs
     private Button onglet_accueil;
-    private Button onglet_utilisateur;
+    public Button onglet_utilisateur;
     private Button onglet_routine;
     private ListView selec_article;
     private ImageView image_article;
@@ -44,7 +44,6 @@ public class Page_Principale extends AppCompatActivity implements AdapterView.On
         titre_article = findViewById(R.id.titre_item);
         favori_article = findViewById(R.id.favori_item);
         resume_article = findViewById(R.id.resume_item);
-
 
 
         //gestion du clic sur le bouton accueil

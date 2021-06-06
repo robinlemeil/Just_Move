@@ -17,7 +17,7 @@
         <activity android:name=".Page_Routine" />
         <activity android:name=".Page_Principale" />
         <activity android:name=".Page_Utilisateur" />
-        <activity android:name=".Page_connexion">
+        <activity android:name=".Page_Connexion">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
