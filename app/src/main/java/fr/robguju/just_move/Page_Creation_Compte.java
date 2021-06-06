@@ -3,10 +3,8 @@ package fr.robguju.just_move;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -57,7 +55,7 @@ public class Page_Creation_Compte extends AppCompatActivity implements View.OnCl
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.id_logo :
-                startActivity(new Intent(Page_Creation_Compte.this, Page_connexion.class));
+                startActivity(new Intent(Page_Creation_Compte.this, Page_Connexion.class));
             case R.id.enregistrer :
                 creation_compte();
         }
